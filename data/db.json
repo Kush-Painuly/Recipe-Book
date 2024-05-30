@@ -1,0 +1,24 @@
+{
+  "recipes": [
+    {
+      "id": "68a8",
+      "title": "kadhai paneer",
+      "ing": [
+        "paneer",
+        "butter"
+      ],
+      "method": "first receipe of paneer",
+      "time": "80"
+    },
+    {
+      "id": "f8a6",
+      "title": "butter paneer",
+      "ing": [
+        "Butter",
+        "paneer"
+      ],
+      "method": "Second recipe of paneer",
+      "time": "80"
+    }
+  ]
+}

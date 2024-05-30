@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Recipe</title>
+  <link rel="stylesheet" href="../css/create.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <div class='navbar'>
+    <nav>
+      <a href='home.html' class='brand'>
+        <h1>Recipe Book</h1>
+      </a>
+      <div class='searchbar'>
+        <form>
+          <label for='search'>Search</label>
+          <input type="text" id="search" onChange="" required />
+        </form>
+      </div>
+      <a href='create.html'>Create Recipe</a>
+    </nav>
+  </div>
+  <div class="theme">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M24.05 46.55 17.3 40H8v-9.3L1.3 24 8 17.3V8h9.3l6.75-6.7L30.7 8H40v9.3l6.7 6.7-6.7 6.7V40h-9.3Zm0-9.55q5.4 0 9.175-3.8Q37 29.4 37 23.95q0-5.4-3.775-9.175Q29.45 11 24.05 11Zm0 5.35 5.4-5.35H37v-7.55L42.45 24 37 18.55V11h-7.55l-5.4-5.45-5.5 5.45H11v7.55L5.55 24 11 29.45V37h7.5ZM24 23.95Z"
+        />
+      </svg>
+    </div>
+
+  <div class='create'>
+    <h2 class='page-title'>Add a New Recipe</h2>
+
+    <form onsubmit="addReceipe(event)">
+      <label>
+        <span>Recipe title:</span>
+        <input type="text" name="title" value="" class="receipe-dets">
+        </input>
+      </label>
+
+      <label>
+        <span>Recipe Ingredients</span>
+        <div class="ingredients">
+          <input type="text" name="ing" class="receipe-dets"></input>
+          <button type="button" onclick="addIngredients()" class='btn'>Add</button>
+        </div>
+      </label>
+      <p>Current Ingredients:<span class="current-ings"></span></p>
+
+      <label>
+        <span>Recipe method:</span>
+        <textarea name="method" class="receipe-dets"></textarea>
+      </label>
+
+      <label>
+        <span>Cooking time (minutes):</span>
+        <input type="text" name="time" class="receipe-dets"></input>
+      </label>
+
+      <button type="submit" class='btn'>Submit</button>
+    </form>
+  </div>
+  <script src="../js/create.js"></script>
+    <script src="../js/theme-toggle.js"></script>
+
+</body>
+
+</html>

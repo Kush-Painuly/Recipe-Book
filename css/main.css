@@ -1,0 +1,97 @@
+/* NAVBAR CSS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --darkMode: #333;
+  --lightMode: #dfdfdf;
+}
+
+/* html,
+body {
+  height: 100%;
+} */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4em;
+  background-color: var(--lightMode);
+  color: #333;
+}
+
+input,
+textarea {
+  color: #333;
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #d4d4d4;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+}
+
+.page-title {
+  text-align: center;
+  margin: 40px auto;
+  color: #333;
+}
+
+.navbar {
+  background-color: #58249c;
+  padding: 20px;
+  color: #fff;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar a.brand {
+  margin-right: auto;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:last-child {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+  padding: 8px;
+  border: 1px solid #ffff;
+  border-radius: 4px;
+}
+
+.navbar a:last-child:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* SEARCHBAR CSS */
+
+.searchbar form {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar input {
+  margin-left: 10px;
+  outline: none;
+}
+
+/*Theme selector*/
+.theme svg {
+  margin-left: 5rem;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  fill: var(--darkMode);
+}
